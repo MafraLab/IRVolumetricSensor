@@ -1,0 +1,8 @@
+<VisualMicro>
+  <Program Name="DistanceSensor" Location="c:\WINXP\Profiles\dalves\My Documents\Arduino\DistanceSensor" IncludeDebugInformation="0" Ext=".pde">
+    <Compile CompilerErrors="0" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\WINXP\Profiles\dalves\Local Settings\Application Data\VMicro\Arduino\Builds\DistanceSensor\uno" IncludesDebug="0" SketchName="DistanceSensor" IsCompiled="1" />
+    <Platform Name="Arduino">
+      <Board Name="uno" Description="Arduino Uno" CoreFolder="D:\arduino-1.0\hardware\arduino\cores\arduino" VariantFullPath="D:\arduino-1.0\hardware\arduino\variants\standard" />
+    </Platform>
+  </Program>
+</VisualMicro>
