@@ -8,10 +8,16 @@ using System.IO;
 
 namespace Volumetry
 {
-	
+	/*
+	This class is to configure our solution
+	*/
 	public class ConfigurationTools
 	{
 		public Configuration configuration = new Configuration();
+		
+		/*
+		Constructor
+		*/
 		public ConfigurationTools()
 		{
 			configuration.camera = new CameraConfig();
@@ -23,6 +29,9 @@ namespace Volumetry
 			}
 		}
 
+		/*
+		Load configuration file
+		*/
 		public void ReadConfiguration()
 		{
 			System.Xml.Serialization.XmlSerializer serializer = new System.Xml.Serialization.XmlSerializer(configuration.GetType());
@@ -31,6 +40,9 @@ namespace Volumetry
 			fs.Close();
 		}
 
+		/*
+		Read the configuration file
+		*/
 		public void WriteConfiguration()
 		{
 			System.Xml.Serialization.XmlSerializer serializer = new System.Xml.Serialization.XmlSerializer(configuration.GetType());
@@ -40,6 +52,10 @@ namespace Volumetry
 		}
 	}
 
+	/*
+	Configuration is serializable in order to store this set of objects as xml
+	Here we store the scale, sensor and camera configuration.
+	*/
 	[Serializable]
 	public class Configuration
 	{
@@ -48,6 +64,9 @@ namespace Volumetry
 		public CameraConfig camera;
 	}
 
+	/*
+	Load camera configuration object to store it in xml
+	*/
 	[Serializable]
 	public class CameraConfig
 	{
@@ -63,6 +82,9 @@ namespace Volumetry
 		public int DetectionTimeout;
 	}
 
+	/*
+	Load the scale configuration object to store it in xml
+	*/
 	[Serializable]
 	public class ScaleConfig
 	{
@@ -73,6 +95,9 @@ namespace Volumetry
 		public System.IO.Ports.StopBits Stopbits;
 	}
 
+	/*
+	Load the Sensor configuration object to store it in xml
+	*/
 	[Serializable]
 	public class SensorConfig
 	{
