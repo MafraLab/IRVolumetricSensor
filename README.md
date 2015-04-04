@@ -3,7 +3,8 @@ IRVolumetricSensor
 
 IRVolumetricSensor
 
-This is the sketch and .NET application to calculate a volume from a parcel.
-This solution uses a sharp IR sensor and a webcam to do the measurement.
+This consists on a Infrared Volumetric Sensor using a Infrared distance sensor, a webcam, and a Arduino.
+
+This is the sketch and .NET application to calculate a volume from a box.
 
 Arduino plugin for visual studio used
